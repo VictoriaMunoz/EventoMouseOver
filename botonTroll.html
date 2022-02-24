@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> Propuesta indecente</title>
+
+    <script lang="JavaScript">
+
+        function cambiarBoton2(){
+
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('b2').style.position = "absolute";
+            document.getElementById('b2').style.left = newWidth + "px";
+            document.getElementById('b2').style.top = newHeight + "px";
+        
+
+        }
+
+        function cambiarBoton1(){
+          document.getElementById('b1').innerHTML="Feliz dia de novios";  
+        alert('Ya somos novios <3');  
+        }
+
+
+
+
+    </script> 
+
+</head>
+<body bgcolor="#00FDF9"> 
+<h1> ¿Quieres ser mi novio?</h1>
+ <button onmousedown="cambiarBoton1()" id="b1"> Si </button>    
+ <button onmouseover="cambiarBoton2()" id="b2"> No </button>
+</body>
+</html>
